@@ -1,0 +1,927 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: #1b1c1e;
+  color: #f5f5fa;
+  font-family: "Poppins", sans-serif;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.main {
+  position: relative;
+  top: 60px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1b1c1e;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 450;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f5f5fa;
+}
+
+nav ul li a:hover {
+  color: rgb(74, 74, 190);
+  transition: all 0.5s ease;
+}
+
+#ham-menu {
+  z-index: 100;
+  display: none;
+}
+
+main hr {
+  border: 0;
+  background: rgb(167, 72, 202);
+  height: 0.2px;
+  margin: 40px 80px;
+}
+
+footer {
+  background-color: #101520;
+}
+
+footer .footer-rights {
+  text-align: center;
+  color: gray;
+  padding: 15px 0;
+}
+
+.left {
+  font-size: 1.5rem;
+}
+
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 75px 0;
+}
+
+.firstSection > div {
+  width: 30%;
+}
+
+.leftSection {
+  font-size: 2.5rem;
+}
+
+.rightSection img {
+  width: 91%;
+}
+
+.purple {
+  color: rgb(219, 102, 219);
+}
+
+.gray {
+  color: gray;
+}
+
+#element {
+  color: rgb(219, 102, 219);
+}
+
+.secondSection {
+  max-width: 80vw;
+  margin: auto;
+  height: 80vh;
+}
+
+.secondSection h1 {
+  font-size: 1.8rem;
+}
+
+.secondSection .box {
+  background: #f5f5fa;
+  height: 2px;
+  width: 30vw;
+  margin: 56px 0;
+  display: flex;
+}
+
+.secondSection .vertical {
+  background-color: #f5f5fa;
+  height: 90px;
+  width: 1px;
+  margin: 0 6vw;
+}
+
+.image-top {
+  width: 70px;
+  position: relative;
+  top: -32px;
+  left: -32px;
+}
+
+.vertical-title {
+  position: relative;
+  top: 65px;
+  width: 200px;
+  font-size: 17px;
+}
+
+.vertical-desc {
+  position: relative;
+  top: 70px;
+  color: gray;
+  font-size: 12px;
+  width: 200px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 25px 125px;
+  margin-top: 100px;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.leftSection .buttons {
+  padding: 25px 0;
+}
+.leftSection .btn {
+  padding: 10px;
+  border: 2px solid #f5f5fa;
+  background-color: rgb(21 0 116);
+  color: #f5f5fa;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.links li a {
+  text-decoration: none;
+  color: gray;
+}
+
+.links li a:hover {
+  color: rgb(74, 74, 190);
+  font-size: 1.01rem;
+}
+
+.about {
+  margin: 0 140px;
+}
+
+.about h1 {
+  font-size: 1.8rem;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-left img {
+  height: 300px;
+  width: 300px;
+  margin: 50px 0;
+  border: 3px solid rgb(126, 19, 207);
+  border-radius: 5px;
+}
+
+.about-right {
+  position: relative;
+  top: -70px;
+}
+
+.about-right a {
+  position: relative;
+  text-decoration: none;
+  color: gray;
+  font-size: 1.5rem;
+  left: 70%;
+}
+
+.about-right div {
+  position: relative;
+  margin: 70px 70px;
+  color: #f5f5f5;
+  text-align: justify;
+}
+
+/* Services Section */
+.services {
+  margin: 0 140px;
+}
+
+.services h1 {
+  font-size: 1.8rem;
+}
+
+.services-box {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.sbox {
+  /* background-color: #9aafda; */
+  color: #f5f5fa;
+  width: 20vw;
+  /* height: 20vh; */
+  margin: 20px;
+  border: 3px solid rgb(126, 19, 207);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.sbox-title {
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.sbox-desc {
+  padding: 10px;
+  text-align: center;
+}
+
+.sbox .btn {
+  padding: 8px;
+  border: 1px solid #f5f5fa;
+  background-color: rgb(89 0 156);
+  color: #f5f5fa;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.sbox .buttons {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+/* Project Section */
+.projects {
+  margin: 0 140px;
+}
+
+.projects h1 {
+  font-size: 1.8rem;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 25vw;
+  height: 350px;
+  perspective: 1000px;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 0.3em;
+}
+
+.flip-card-front {
+  background: linear-gradient(160deg, #ff0055, #4337e7 30%, transparent);
+  color: #fff;
+}
+
+.flip-card-back {
+  background: linear-gradient(160deg, #ff0055, #4337e7 30%, transparent);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.project-cards {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 0;
+}
+
+/* Contact Section */
+.contact {
+  margin: 0 140px;
+}
+
+.contact h1 {
+  font-size: 1.8rem;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+.user-box input,
+.user-box textarea {
+  padding: 10px;
+  margin: 5px 0;
+  border: 3px solid rgb(126, 19, 207);
+  border-radius: 5px;
+  width: 30vw;
+  background: #251930;
+  color: #f5f5fa;
+  font-size: 1.1rem;
+}
+
+form .buttons button {
+  padding: 10px 40px;
+  border: 2px solid #f5f5fa;
+  background-color: rgb(85 0 149);
+  color: #f5f5fa;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+form .buttons {
+  display: flex;
+  justify-content: center;
+}
+
+/* Media Query */
+@media only screen and (min-width: 1024px) {
+  /* First Section */
+  .firstSection > div {
+    width: 40%;
+  }
+
+  .leftSection {
+    font-size: 2.3rem;
+  }
+
+  /* About Section */
+  .about {
+    margin-right: 50px;
+    margin-left: 110px;
+  }
+
+  .about-right a {
+    left: 75%;
+  }
+
+  .about-left img {
+    height: 200px;
+    width: 200px;
+    margin: 50px -5px;
+  }
+
+  .about-right div {
+    margin: 70px 40px;
+  }
+
+  /* Services Section */
+  .services {
+    margin: 0 110px;
+  }
+
+  .sbox {
+    width: 90%;
+    margin: 5px;
+    margin-top: 30px;
+  }
+
+  /* Project Section */
+  .projects {
+    margin: 0 110px;
+  }
+
+  .flip-card {
+    height: 400px;
+  }
+
+  .flip-card-back {
+    font-size: 0.9rem;
+  }
+
+  /* Contact Section */
+  .contact-box form {
+    width: 100%;
+  }
+
+  .user-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .user-box input,
+  .user-box textarea {
+    width: 70%;
+  }
+
+  .secondSection{
+    height: 95vh;
+  }
+}
+
+@media only screen and (min-width: 851px) and (max-width: 1023px) {
+  /* Nav bar */
+  .left {
+    font-size: 1.4rem;
+  }
+
+  nav ul li a {
+    font-size: 0.9rem;
+  }
+
+  nav ul li a:hover {
+    font-size: 1rem;
+  }
+
+  /* First Section */
+  .leftSection {
+    font-size: 2rem;
+  }
+
+  .firstSection > div {
+    width: 36%;
+  }
+
+  /* Second Section */
+  .secondSection {
+    height: 60vh;
+  }
+
+  /* About Section */
+  .about {
+    margin-right: 50px;
+  }
+
+  .about-right a {
+    left: 75%;
+  }
+
+  .about-left img {
+    height: 200px;
+    width: 200px;
+    margin: 50px -5px;
+  }
+
+  .about-right div {
+    margin: 70px 40px;
+  }
+
+  /* Services Section */
+  .services-box {
+    flex-wrap: wrap;
+  }
+  .sbox {
+    width: 100%;
+  }
+
+  /* Project Section */
+  .project-cards {
+    flex-wrap: wrap;
+  }
+
+  .flip-card {
+    width: 100%;
+    margin: 10px;
+  }
+
+  /* Contact Section */
+  .contact-box form {
+    width: 100%;
+  }
+
+  .user-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .user-box input,
+  .user-box textarea {
+    width: 70%;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 25px 115px;
+  }
+
+  .footer-first {
+    font-size: 0.9rem;
+  }
+
+  .links {
+    font-size: 0.8rem;
+  }
+
+  footer .footer-rights {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  /* Navbar */
+  nav {
+    width: 100vw;
+    flex-direction: column;
+    height: 70px;
+  }
+
+  /* First Section */
+  .firstSection {
+    flex-direction: column-reverse;
+  }
+
+  .leftSection {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rightSection {
+    width: 40vw !important;
+  }
+
+  /* Second Section */
+  .secondSection {
+    height: 80vh;
+  }
+
+  /* About Section */
+  .about {
+    margin: 0 70px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-right a {
+    top: -360px;
+    left: 80%;
+  }
+
+  .about-left img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .about-right div {
+    margin: 60px 20px;
+  }
+
+  /* Services Section */
+  .services-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sbox {
+    width: 100%;
+  }
+
+  /* Project Section */
+  .project-cards {
+    flex-direction: column;
+  }
+  .flip-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Contact Section */
+  .user-box input,
+  .user-box textarea {
+    width: 100%;
+  }
+
+  .user-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-box form {
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 25px 0px;
+  }
+
+  .footer-first {
+    font-size: 0.85rem;
+  }
+
+  .links {
+    font-size: 0.75rem;
+  }
+
+  footer .footer-rights {
+    font-size: 0.85rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  body {
+    min-width: fit-content;
+  }
+
+  .secondSection{
+    height: 90vh;
+  }
+  /* Nav Bar */
+  nav {
+    flex-direction: row !important;
+  }
+  .left {
+    font-size: 1.2rem;
+  }
+
+  .right {
+    position: absolute;
+    top: 105%;
+    display: none;
+    width: 270px;
+    height: 35vh;
+    background: #2b2b2b;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+  }
+
+  .right ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: all 1s ease;
+    margin: 4px 0;
+    padding: 0px 25px;
+    font-size: 1rem;
+  }
+  .right ul li a {
+    padding: 0 5px;
+  }
+  #ham-menu {
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  .right.open {
+    display: block;
+    right: 2%;
+  }
+
+  /* First Section */
+  .firstSection {
+    flex-direction: column-reverse;
+    margin: 50px 0;
+  }
+
+  .rightSection {
+    display: flex;
+    justify-content: center;
+  }
+
+  .rightSection img {
+    width: 60vw;
+  }
+
+  .leftSection {
+    font-size: 1.9rem;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Tagline and title */
+  .tagline {
+    font-size: 0.9rem;
+  }
+
+  .sec-name {
+    font-size: 1.5rem !important;
+  }
+
+  /* About section */
+  .about {
+    margin: 0 37.525px !important;
+  }
+
+  .about-left img {
+    width: 200px !important;
+    height: 200px !important;
+  }
+
+  .about-right a {
+    top: -300px !important;
+    left: 70% !important;
+    font-size: 1.3rem;
+  }
+
+  .about-right div {
+    margin: 30px 0px !important;
+    font-size: 0.9rem;
+  }
+
+  /* Services Section */
+  .services {
+    margin: 0 37.525px;
+  }
+
+  /* Project Section */
+  .projects {
+    margin: 0 37.525px;
+  }
+
+  .flip-card-back p {
+    font-size: 0.9rem;
+  }
+
+  .project-cards {
+    padding: 25px 0;
+  }
+
+  /* Contact Section */
+  .contact {
+    margin: 0 32.525px;
+  }
+
+  /* Footer */
+  .footer-first {
+    font-size: 0.8rem !important;
+  }
+
+  footer .footer-rights {
+    font-size: 0.7rem !important;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .tagline {
+    font-size: 0.7rem !important;
+  }
+  .sec-name {
+    font-size: 1.3rem !important;
+  }
+  .right{
+    height: 30vh;
+  }
+  .right ul {
+    font-size: 0.9rem !important;
+  }
+  .left {
+    font-size: 1.1rem !important;
+  }
+  .leftSection {
+    font-size: 1.5rem !important;
+  }
+  .leftSection .btn {
+    padding: 8px;
+    border: 1.5px solid #f5f5fa;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  .leftSection .buttons {
+    padding: 20px 0;
+  }
+
+  .buttons a {
+    padding: 0px 5px;
+  }
+
+  #about {
+    margin: 0 28px !important;
+  }
+
+  .about-content .about-right a {
+    top: -190px !important;
+    left: 65% !important;
+    font-size: 1.2rem;
+  }
+
+  .about-content .about-left img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  .about-left img {
+    margin: 25px 0;
+  }
+
+  .about-right div {
+    font-size: 0.8rem !important;
+  }
+
+  #services {
+    margin: 0 28px !important;
+  }
+  .sbox {
+    font-size: 0.9rem;
+  }
+  .sbox-desc {
+    padding: 5px;
+  }
+  .sbox-title {
+    padding: 5px 0;
+  }
+  .sbox {
+    border: 2px solid rgb(126, 19, 207);
+    margin: 15px 0;
+  }
+
+  #projects {
+    margin: 0 28px !important;
+  }
+
+  .flip-card-front .title {
+    font-size: 1.4rem;
+  }
+  .flip-card-front p {
+    font-size: 0.9rem;
+  }
+  .flip-card-back p {
+    font-size: 0.8rem !important;
+  }
+
+  #contact {
+    margin: 0 28px !important;
+  }
+  .contact-box {
+    padding: 30px 0;
+  }
+
+  /* Footer */
+  .footer-first h3 {
+    font-size: 0.8rem !important;
+  }
+  #footer-rights {
+    font-size: 0.5rem !important;
+  }
+
+  .secondSection{
+    height: 100vh;
+  }
+}
